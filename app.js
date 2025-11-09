@@ -1,5 +1,3 @@
-Shushan's Pyton, [11/10/2025 12:25 AM]
-/* базовый сброс */
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
   --glass: rgba(255,255,255,0.08);
@@ -12,7 +10,6 @@ Shushan's Pyton, [11/10/2025 12:25 AM]
   --shadow: 0 12px 30px rgba(11,16,32,0.28);
 }
 
-/* фон страницы — очень яркий и насыщенный */
 html,body{height:100%}
 body{
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
@@ -29,7 +26,6 @@ body{
   -moz-osx-font-smoothing:grayscale;
 }
 
-/* панель с glassmorphism */
 .panel{
   width:min(980px,96vw);
   background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
@@ -42,7 +38,6 @@ body{
   overflow:hidden;
 }
 
-/* декоративные радужные полосы */
 .panel::before, .panel::after{
   content:"";
   position:absolute;
@@ -58,7 +53,6 @@ body{
 }
 .panel::after{transform:rotate(6deg);top:auto;bottom:-70px;opacity:0.05;filter:blur(46px)}
 
-/* шапка */
 .top{display:flex;gap:18px;align-items:center;margin-bottom:18px}
 .logo{
   width:72px;height:72px;border-radius:16px;
@@ -110,9 +104,6 @@ body{
   word-break:break-word;
 }
 .
-
-Shushan's Pyton, [11/10/2025 12:29 AM]
-/* app.js — функционал To-Do */
 (() => {
   const STORAGE_KEY = 'bright-todo-list:v1';
 
