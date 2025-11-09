@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Яркий To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <section class="panel">
+      <header class="top">
+        <div class="logo">BAN</div>
+        <div class="title-wrap">
+          <h1 class="title">Яркий To-Do List</h1>
+          <p class="subtitle">Добавляй, редактируй, перетаскивай — всё сохраняется в браузере ✨</p>
+        </div>
+        <div class="controls">
+          <button id="clearAll" class="btn subtle">Очистить всё</button>
+        </div>
+      </header>
+
+      <form id="todoForm" class="todo-form" autocomplete="off">
+        <input id="todoInput" class="input" type="text" placeholder="Добавить новую задачу и нажать Enter..." />
+        <button class="btn add" type="submit">Добавить</button>
+      </form>
+
+      <section class="list-wrap">
+        <ul id="todoList" class="todo-list" aria-live="polite"></ul>
+      </section>
+
+      <footer class="footer">
+        <div class="legend">
+          <span class="dot done"></span> — выполнено
+          <span class="dot todo"></span> — в процессе
+        </div>
+        <div class="info">Задач сохранено: <span id="count">0</span></div>
+      </footer>
+    </section>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
